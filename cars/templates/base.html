@@ -1,0 +1,189 @@
+
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+
+    <!-- Meta tag Keywords -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8" />
+
+    <script>
+        addEventListener("load", function() {
+            setTimeout(hideURLbar, 0);
+        }, false);
+
+        function hideURLbar() {
+            window.scrollTo(0, 1);
+        }
+    </script>
+    <!-- //Meta tag Keywords -->
+    <!-- Custom-Files -->
+    <link rel="stylesheet" href="{% static 'css/bootstrap.css' %}">
+    <link rel="stylesheet" href="{% static 'js/base.js' %}">
+    <!-- Bootstrap-Core-CSS -->
+    <link rel="stylesheet" href="{% static 'css/style.css' %}" type="text/css" media="all" />
+    <!-- Style-CSS -->
+    <!-- font-awesome-icons -->
+    <link href="{% static 'css/font-awesome.css'%}" rel="stylesheet">
+    <!-- //font-awesome-icons -->
+    <!-- /Fonts -->
+    <link href="//fonts.googleapis.com/css?family=Hind:300,400,500,600,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <!-- //Fonts -->
+
+</head>
+
+<body>
+    <div class="main-sec">
+        <!-- //header -->
+        <header class="header py-sm-3 pt-3 pb-2 " id="home">
+            <div class="container">
+                <!-- nav -->
+                <div class="top-w3pvt d-flex">
+                    <div id="logo">
+                        <h1> <a href="{%url 'index'%}"><span class="log-w3pvt">D</span>aves Car Deals</a> <label class="sub-des">Best  Cars Deals</label></h1>
+                    </div>
+
+                    <div class="forms ml-auto">
+                        <a href="{%url 'login'%}" class="btn"><span class="fa fa-user-circle-o"></span> Sign In</a>
+                        <a href="{%url 'register'%}" class="btn"><span class="fa fa-pencil-square-o"></span> Sign Up</a>
+                    </div>
+                </div>
+                <div class="nav-top-wthree">
+                    <nav class="navbar navbar-default navbar-fixed-top">
+                      <div class="container">
+                        <label for="drop" class="toggle"><span class="fa fa-bars"></span></label>
+                        <input type="checkbox" id="drop" />
+                        <ul class="menu">
+                            <li><a href="{%url 'index'%}">Home</a></li>
+                            <li><a href="{%url 'product'%}">Collections</a></li>
+                            <li><a href="{%url 'about'%}">About Us</a></li>
+                            <li><a href="{%url 'contact'%}">Contact</a></li>
+                        </ul>
+                      </div>
+                    </nav>
+                    <!-- //nav -->
+
+                    <div class="clearfix"></div>
+                </div>
+            </div>
+        </header>
+
+        <!-- //header -->
+        <!--/banner-->
+        {%block content%}
+
+        {%endblock content%}
+
+    <!--//newsletter -->
+
+    <!--/shipping-->
+
+    <section class="shipping-wthree ">
+        <div class="shiopping-grids d-lg-flex">
+            <div class="col-lg-4 shiopping-w3pvt-gd text-center">
+                <div class="icon-gd"><span class="fa fa-truck" aria-hidden="true"></span>
+                </div>
+                <div class="icon-gd-info">
+                    <h3>BEST CAR PLANS IN TOWN</h3>
+                    <p></p>
+                </div>
+            </div>
+            <div class="col-lg-4 shiopping-w3pvt-gd sec text-center">
+                <div class="icon-gd"><span class="fa fa-bullhorn" aria-hidden="true"></span></div>
+                <div class="icon-gd-info">
+                    <h3>LATEST MODELS</h3>
+                    <p></p>
+                </div>
+            </div>
+            <div class="col-lg-4 shiopping-w3pvt-gd text-center">
+                <div class="icon-gd"> <span class="fa fa-gift" aria-hidden="true"></span></div>
+                <div class="icon-gd-info">
+                    <h3>BEST DEALS</h3>
+                    <p>.</p>
+                </div>
+
+            </div>
+        </div>
+</section>
+
+
+    <!--//shipping-->
+    <!-- footer -->
+
+
+    <div class="footer_agileinfo_topf py-5" >
+        <div class="container py-md-5">
+            <div class="row">
+                <div class="col-lg-3 footer_wthree_gridf mt-lg-5">
+                    <h2><a href="{%url 'index'%}"><span>DAVES</span>CAR DEALS
+                        </a> </h2>
+                    <label class="sub-des2">LABEL DEALS</label>
+                </div>
+                <div class="col-lg-3 footer_wthree_gridf mt-md-0 mt-4">
+                    <ul class="footer_wthree_gridf_list">
+                        <li>
+                            <a href="{%url 'index'%}"><span class="fa fa-angle-right" aria-hidden="true"></span> Home</a>
+                        </li>
+                        <li>
+                            <a href="{%url 'about'%}"><span class="fa fa-angle-right" aria-hidden="true"></span> About</a>
+                        </li>
+                        <li>
+                            <a href="{%url 'product'%}"><span class="fa fa-angle-right" aria-hidden="true"></span> VISIT US</a>
+                        </li>
+                        <li>
+                            <a href="{%url 'product'%}"><span class="fa fa-angle-right" aria-hidden="true"></span>Collections</a>
+                        </li>
+
+                    </ul>
+                </div>
+
+                <div class="col-lg-3 footer_wthree_gridf mt-md-0 mt-sm-4 mt-3">
+                    <ul class="footer_wthree_gridf_list">
+                        <li>
+                            <a href="{%url 'login'%}"><span class="fa fa-angle-right" aria-hidden="true"></span> Login </a>
+                        </li>
+
+                        <li>
+                            <a href="{%url 'register'%}"><span class="fa fa-angle-right" aria-hidden="true"></span>Register</a>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+
+            <div class="w3ls-fsocial-grid">
+                <h3 class="sub-w3ls-headf">Follow Us</h3>
+                <div class="social-ficons">
+                    <ul>
+                        <li><a href="#"><span class="fa fa-facebook"></span> Facebook</a></li>
+                        <li><a href="#"><span class="fa fa-twitter"></span> Twitter</a></li>
+                        <li><a href="#"><span class="fa fa-google"></span>Google</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="move-top text-center mt-lg-4 mt-3">
+                <a href="#home"><span class="fa fa-angle-double-up" aria-hidden="true"></span></a>
+            </div>
+        </div>
+    </div>
+    <!-- //footer -->
+
+    <!-- copyright -->
+    <div class="cpy-right text-center py-3">
+        <p>© 2021 DAVES CAR DEALS. All rights reserved | Design by Timothy Ndungo
+        </p>
+
+    </div>
+
+    <!-- //copyright -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+</body>
+
+</html>

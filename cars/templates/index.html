@@ -1,0 +1,144 @@
+{%extends 'base.html'%}
+{% load static %}
+{%block title%}
+
+{%endblock title%}
+
+{%block content%}
+
+  <div class="banner-wthree-info container">
+            <div class="row">
+                <div class="col-lg-5 banner-left-info">
+                    <h3 >A<span> COLLECTION OF CARS LIKE NO OTHER</span></h3>
+                    <a href="{%url 'product'%}" class="btn shop">View Now</a>
+                </div>
+
+                <div class="col-lg-7 banner-img">
+                    <img src="{% static 'images/index.jpeg' %}" alt="part image" class="img-fluid">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- //banner-->
+    <!--/banner-bottom -->
+    <section class="banner-bottom py-5">
+        <div class="container py-md-3">
+            <div class="row grids-wthree-info text-center">
+                <div class="col-lg-4 ab-content">
+                    <div class="ab-info-con">
+                        <h4>ROAD READY AND VERY CLEAN CARS</h4>
+                        <p>Our Cars Are Of The Highest Standards .</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 ab-content">
+                    <div class="ab-info-con">
+                        <h4>POCKET FRIENDLY PRICES</h4>
+                        <p>We offer the products at affordable prices.Discount Packages for large scale purchases.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 ab-content">
+                    <div class="ab-info-con">
+                        <h4>DUTY PAID</h4>
+                        <p>Our Cars Meet All the Registration Protocols.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- /banner-bottom -->
+    <!--/banner-bottom -->
+
+    <!-- //collections-->
+    <!-- /mid-section -->
+  <!--  <section class="mid-section">
+        <div class="d-lg-flex p-0">
+            <div class="col-lg-6 bottom-w3pvt-left p-lg-0  ">
+                <img src="{%static 'images/ab1.jpg'%}" class="img-fluid" alt="" />
+                <div class="pos-wthree">
+                    <h4 class="text-wthree">Considerate <br> Customer Discounts.</h4>
+                    <a href="{%url 'product'%}" class="btn shop mt-3">View Now</a>
+                </div>
+            </div>
+            <div class="col-lg-6 bottom-w3pvt-left bottom-w3pvt-right p-lg-0  ">
+                <img src="{% static 'images/ab2.jpg'%}" class="img-fluid" alt="" />
+                <div class="pos-w3pvt">
+                    <h4 class="text-w3pvt">Visit <br> Us Anytime</h4>
+                    <a href="{%url 'product'%}" class="btn shop mt-3">View Now</a>
+                </div>
+            </div>
+        </div>
+    </section> -->
+    <!-- //mid-section -->
+
+    <!--/gallery -->
+    <section class="banner-bottom py-5">
+        <div class="container py-md-5">
+
+
+            <div class="row">
+                <div class="col-lg-4 gallery-content-info text-center mt-lg-5">
+                    <h3 class="title-wthree mb-lg-5 mb-4">Trending Now </h3>
+                    <p>We Have Some Of the Trendy Car Designs  Just For You.</p>
+                    <a href="{%url 'product'%}" class="btn shop mt-3">View Now</a>
+
+                </div>
+                <div class="col-lg-8 gallery-content">
+                    <div class="row">
+                        <div class="col-md-4 col-sm-6 gal-img">
+                            <a href="{%url 'product'%}"><img src="{%static 'images/g1.jpg'%}" alt="" class="img-fluid mt-4"></a>
+                        </div>
+                        <div class="col-md-4 col-sm-6 gal-img">
+                            <a href="{%url 'product'%}"><img src="{%static 'images/g2.jpg'%}" alt="" class="img-fluid mt-4"></a>
+                        </div>
+                        <div class="col-md-4 col-sm-6 gal-img">
+                            <a href="{%url 'product'%}"><img src="{%static 'images/g3.jpg'%}" alt="" class="img-fluid mt-4"></a>
+                        </div>
+                        <div class="col-md-4 col-sm-6 gal-img">
+                            <a href="{%url 'product'%}"><img src="{%static 'images/g4.jpg'%}" alt="" class="img-fluid mt-4"></a>
+                        </div>
+                        <div class="col-md-4 col-sm-6 gal-img">
+                            <a href="{%url 'product'%}"><img src="{%static 'images/g5.jpg'%}" alt="" class="img-fluid mt-4"></a>
+                        </div>
+                        <div class="col-md-4 col-sm-6 gal-img">
+                            <a href="{%url 'product'%}"><img src="{%static 'images/g6.jpg'%}" alt="" class="img-fluid mt-4"></a>
+                        </div>
+
+                    </div>
+                    <!-- gallery popups -->
+                    <!-- popup-->
+                    <div id="gal1" class="popup-effect">
+                        <div class="popup">
+                            <img src="{%static 'images/g1.jpg'%}" alt="Popup image" class="img-fluid mt-4" />
+                            <a class="close" href="{url 'product'}">&times;</a>
+                        </div>
+                    </div>
+                    <!-- //popup -->
+                    <!-- popup-->
+                    <div id="gal2" class="popup-effect">
+                        <div class="popup">
+                            <img src="{%static 'images/g2.jpg'%}" alt="Popup image" class="img-fluid mt-4" />
+                            <a class="close" href="{%url 'product'%}">&times;</a>
+                        </div>
+                    </div>
+                    <!-- //popup -->
+                    <!-- popup-->
+                    <div id="gal3" class="popup-effect">
+                        <div class="popup">
+                            <img src="{%static 'images/g3.jpg'%}" alt="Popup image" class="img-fluid mt-4" />
+                            <a class="close" href="{%url 'product'%}">&times;</a>
+                        </div>
+                    </div>
+                    <!-- //popup -->
+                    <!-- //gallery popups -->
+
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <!-- //gallery-->
+    <!--/newsletter -->
+
+    {%endblock content%}

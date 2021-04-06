@@ -1,0 +1,73 @@
+{%extends 'base.html'%}
+{% load static %}
+{%block title%}
+
+{%endblock title%}
+
+{%block content%}
+
+<section class="banner-bottom py-5">
+<div class="container py-5">
+  <h3 class="title-wthree mb-lg-5 mb-4 text-center">VIEW NOW</h3>
+
+
+            <div class="row shop-wthree-info text-center" >
+              {%for obj in product_list%}
+                <div class="col-lg-3 shop-info-grid text-center mt-4 ">
+                    <div class="product-shoe-info shoe">
+                        <div class="men-thumb-item">
+                          <img src="{{obj.image}}" class="img-fluid" alt="" >
+                            <ul><a href="#"> VIEW ALL
+                            <li><a href="{{obj.image_left}}"></a></li>
+                              <li><a href="{{obj.image_right}}"></a></li>
+                                <li><a href="{{obj.image_front}}"></a></li>
+                                  <li><a href="{{obj.image_back}}"></a></li>
+                                    <li><a href="{{obj.image_interior}}"></a></li>
+                                  </a>
+
+                            </ul>
+
+
+
+
+
+                        </div>
+                        <div class="item-info-product">
+                            <h4>
+                                {{obj.name}}
+                            </h4>
+
+                            <div class="product_price">
+                                <div class="grid-price">
+                                    <span class="money">{{obj.price}}</span>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                {%endfor%}
+                <!--<nav aria-label="Page navigation example">
+                  <ul class="pagination justify-content-end">
+                    <li class="page-item ">
+                      <a class="page-link" href="?pg=1" tabindex="-1" aria-disabled="true">First</a>
+                    </li>
+                    {%if product_list.has_previous%}
+                    <li class="page-item"><a class="page-link" href="?pg={{product_list.previous_page_number}}">{{product_list.previous_page_number}}</a></li>
+                    {%endif%}
+                    <li class="page-item"><a class="page-link" href="?pg={{product_list.number}}">{{product_list.number}}</a></li>
+                    {%if product_list.has_next%}
+                    <li class="page-item"><a class="page-link" href="?pg={{product_list.next_page_number}}">{{product_list.next_page_number}}</a></li>
+                    {%endif%}
+                    <li class="page-item">
+                      <a class="page-link" href="?pg={{product_list.paginator.num_pages}}">Last</a>
+                    </li>
+                  </ul>
+                </nav>
+              </div>-->
+
+
+        </div>
+    </section>
+
+    {%endblock content%}
