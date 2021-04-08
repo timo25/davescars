@@ -1,6 +1,6 @@
 import os
 import django_on_heroku
-from decouple import config
+#from decouple import config
 import dj_database_url
 """
 Django settings for daves project.
