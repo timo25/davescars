@@ -25,7 +25,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = '7)+tioo5g6ik-_5&902x=p%#lcz$!&w%^y@bu4x_m)f&uy6orz'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 
 ALLOWED_HOSTS = ['davescars.herokuapp.com']
@@ -83,9 +83,9 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
         'NAME': 'mydb',
-        #'USER': 'carter',
-        #'PASSWORD': '',
-        #'HOST': 'localhost',
+        'USER': 'carter',
+        'PASSWORD': 'Timo-7436',
+        'HOST': 'localhost',
         #'PORT': '',
     }
 }
